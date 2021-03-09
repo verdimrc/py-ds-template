@@ -7,7 +7,7 @@
 This project was initialized by {{cookiecutter.author_name}} using:
 
 ```bash
-cookiecutter https://github.com/verdimrc/verdimrc-py-ds-template
+cookiecutter https://github.com/verdimrc/py-ds-template
 ```
 
 ## License

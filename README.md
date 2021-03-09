@@ -3,5 +3,5 @@
 ## To start a new project, run
 
 ```bash
-cookiecutter https://github.com/verdimrc/verdimrc-py-ds-template
+cookiecutter https://github.com/verdimrc/py-ds-template
 ```

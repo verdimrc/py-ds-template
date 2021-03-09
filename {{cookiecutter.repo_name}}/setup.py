@@ -53,6 +53,6 @@ setup(
 )
 
 raise ValueError(
-    "Baseline setup.py from cookiecutter verdimrc-py-ds-template. "
+    "Baseline setup.py from cookiecutter verdimrc/py-ds-template. "
     "Please review and modify accordingly, then remove this exception"
 )
