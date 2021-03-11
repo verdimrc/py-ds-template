@@ -4,9 +4,9 @@
   "author_name": "Your name (or your organization/company/team)",
   "description": "A short description of the project.",
   "open_source_license": [
-    "MIT",
-    "Apache-2.0 License",
-    "No license file"
+    "No license file",
+    "MIT License",
+    "Apache-2.0 License"
   ],
   "python_interpreter": [
     "python3",

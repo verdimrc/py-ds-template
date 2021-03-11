@@ -34,7 +34,9 @@ setup(
         "Documentation": f"https://{_repo}.readthedocs.io/en/stable/",
         "Source Code": f"https://github.com/abcd/{_repo}/",
     },
+    {% if cookiecutter.open_source_license != "No license file" -%}
     license="{{cookiecutter.open_source_license}}",
+    {% endif -%}
     keywords="word1 word2 word3",
     platforms=["any"],
     classifiers=[
@@ -42,7 +44,9 @@ setup(
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
         "Natural Language :: English",
-        "License :: OSI Approved :: MIT License",
+        {% if cookiecutter.open_source_license != "No license file" -%}
+        "License :: OSI Approved :: {{cookiecutter.open_source_license}}",
+        {% endif -%}
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
