@@ -1,4 +1,4 @@
-{% if cookiecutter.open_source_license == "MIT" -%}
+{% if cookiecutter.open_source_license == "MIT License" -%}
 The MIT License (MIT)
 Copyright (c) <YEAR> {{cookiecutter.author_name}}.
 
