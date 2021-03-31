@@ -19,7 +19,7 @@ message = [
     "# Congratulations, your project has been initialized!",
     "#",
     "# Recommended next steps:",
-    "# - git init",
+    "# - git init (this is needed for the ipython_config.py magic to work)",
     "# - pre-commit autoupdate",
     "# - pre-commit install",
     "# - review README.md",
