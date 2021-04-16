@@ -1,3 +1,11 @@
+# vscode: retain launch.json for sample invocation
+.vscode/*
+!.vscode/launch.json
+
+# Directories for must-not-be-versioned datasets.
+/data/
+test/data/
+
 # Jupyter notebook's checkpoints
 .ipynb_checkpoints
 
