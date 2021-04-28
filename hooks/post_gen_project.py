@@ -21,7 +21,7 @@ else:
 package_name = "{{cookiecutter.package_name}}".strip()
 if package_name == "":
     # This project does not contain a Python package, hence, remove setup.py.
-    Path("setup.py").unlink(missing_ok=True)
+    rm("setup.py")
 else:
     pkg_dir = Path("src") / package_name
     pkg_dir.mkdir()
@@ -29,7 +29,7 @@ else:
 
 license = "{{cookiecutter.open_source_license}}"
 if license == "No license file":
-    Path("LICENSE").unlink(missing_ok=True)
+    rm("LICENSE")
 
 # Display next steps.
 message = [
