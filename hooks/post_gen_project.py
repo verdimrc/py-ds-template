@@ -1,4 +1,22 @@
+import sys
 from pathlib import Path
+
+# missing_ok available only since python-3.8
+# https://docs.python.org/3/library/pathlib.html#pathlib.Path.unlink
+if sys.version_info[0:2] >= (3, 8):
+
+    def rm(s: Path) -> None:
+        Path(s).unlink(missing_ok=True)
+
+
+else:
+
+    def rm(s: Path) -> None:
+        try:
+            Path(s).unlink()
+        except FileNotFoundError:
+            pass
+
 
 package_name = "{{cookiecutter.package_name}}".strip()
 if package_name == "":
